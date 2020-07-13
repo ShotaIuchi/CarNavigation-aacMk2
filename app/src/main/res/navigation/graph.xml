@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/graph"
+    app:startDestination="@id/topFragment">
+
+    <fragment
+        android:id="@+id/topFragment"
+        android:name="com.example.aacmk2.TopFragment"
+        android:label="top_fragment"
+        tools:layout="@layout/top_fragment" >
+        <action
+            android:id="@+id/action_topData"
+            app:destination="@id/dataFragment" />
+        <action
+            android:id="@+id/action_toObservable"
+            app:destination="@id/observableFragment" />
+        <action
+            android:id="@+id/action_topLiveData"
+            app:destination="@id/liveDataFragment" />
+        <action
+            android:id="@+id/action_topViewModel"
+            app:destination="@id/viewModelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dataFragment"
+        android:name="com.example.aacmk2.DataFragment"
+        android:label="data_fragment"
+        tools:layout="@layout/data_fragment" />
+    <fragment
+        android:id="@+id/observableFragment"
+        android:name="com.example.aacmk2.ObservableFragment"
+        android:label="observable_fragment"
+        tools:layout="@layout/observable_fragment" />
+    <fragment
+        android:id="@+id/liveDataFragment"
+        android:name="com.example.aacmk2.LiveDataFragment"
+        android:label="live_data_fragment"
+        tools:layout="@layout/live_data_fragment" />
+    <fragment
+        android:id="@+id/viewModelFragment"
+        android:name="com.example.aacmk2.ViewModelFragment"
+        android:label="view_model_fragment"
+        tools:layout="@layout/view_model_fragment" />
+</navigation>
