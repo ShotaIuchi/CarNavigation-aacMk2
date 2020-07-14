@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_topViewModel"
             app:destination="@id/viewModelFragment" />
+        <action
+            android:id="@+id/action_toLiveDataTest01"
+            app:destination="@id/liveDataTest01Fragment" />
     </fragment>
     <fragment
         android:id="@+id/dataFragment"
@@ -43,4 +46,9 @@
         android:name="com.example.aacmk2.ViewModelFragment"
         android:label="view_model_fragment"
         tools:layout="@layout/view_model_fragment" />
+    <fragment
+        android:id="@+id/liveDataTest01Fragment"
+        android:name="com.example.aacmk2.LiveDataTest01Fragment"
+        android:label="live_data_test01_fragment"
+        tools:layout="@layout/live_data_test01_fragment" />
 </navigation>

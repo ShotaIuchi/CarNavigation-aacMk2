@@ -20,6 +20,7 @@ class TopFragment : Fragment() {
         binding.observable.setOnClickListener(Navigation.createNavigateOnClickListener(TopFragmentDirections.actionToObservable()))
         binding.liveData.setOnClickListener(Navigation.createNavigateOnClickListener(TopFragmentDirections.actionTopLiveData()))
         binding.viewModel.setOnClickListener(Navigation.createNavigateOnClickListener(TopFragmentDirections.actionTopViewModel()))
+        binding.viewModel01.setOnClickListener(Navigation.createNavigateOnClickListener(TopFragmentDirections.actionToLiveDataTest01()))
         return binding.root
     }
 

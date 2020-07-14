@@ -16,6 +16,9 @@ buildscript {
         def nav_version = "2.3.0-rc01"
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
     }
+    repositories {
+        maven { url "https://oss.jfrog.org/libs-snapshot" }
+    }
 }
 
 allprojects {
