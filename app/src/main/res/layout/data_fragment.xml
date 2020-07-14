@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="24dp"
-            android:text="@{me.time}" />
+            android:text="@{me.data}" />
         <Button
             android:id="@+id/update"
             android:layout_width="match_parent"

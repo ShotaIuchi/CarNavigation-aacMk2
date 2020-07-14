@@ -24,7 +24,7 @@ class DataFragment : Fragment() {
         val binding: DataFragmentBinding = DataBindingUtil.inflate(inflater, R.layout.data_fragment, container, false)
         binding.me = me
         binding.update.setOnClickListener {
-            me = DataData(Date().time.toString())
+            me.data = Date().time.toString()
         }
         binding.back.setOnClickListener {
             GlobalScope.launch {
